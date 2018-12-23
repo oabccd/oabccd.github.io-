@@ -142,6 +142,110 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Freertos-任务创建" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/23/Freertos-任务创建/">Freertos任务创建</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/23/Freertos-任务创建/" class="archive-article-date">
+  	<time datetime="2018-12-23T12:59:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-23</time>
+</a>
+        
+      </header>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Freertos 任务创建相关API函数列表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>xTaskCreate()</td>
+<td>动态的方法创建一个任务</td>
+</tr>
+<tr>
+<td>xTaskCreateStatic()</td>
+<td>静态的方法创建一个任务</td>
+</tr>
+<tr>
+<td>xTaskCreateRestricted()</td>
+<td>使用 MPU 进行限制的任务，相关内存使用动态内存分配</td>
+</tr>
+<tr>
+<td>vTaskDelete()</td>
+<td>删除一个任务</td>
+</tr>
+</tbody>
+</table>
+        
+      
+
+      
+    </div>
+
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Freertos</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/12/23/Freertos-任务创建/">展开全文 >></a>
+        </p>
+      
+      
+      <div class="clearfix"></div>    
+    </div>
+
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-C++代码规范总结" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -165,20 +269,12 @@
       
         <ul>
 <li>函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。</li>
-<li>关于引用的一些规则：<blockquote>
-<ol>
-<li>引用被创建的同时必须被初始化（指针则可以在任何时候被初始化）</li>
-<li>不能有 NULL 引用，引用必须与合法的存储单元关联（指针则可以是NULL）</li>
-<li>一旦引用被初始化，就不能改变引用的关系（指针则可以随时改变所指的对象）</li>
-</ol>
-</blockquote>
-</li>
-</ul>
+<li><p>关于引用的一些规则：</p>
         
       
 
       
-    </div>
+    </li></ul></div>
 
     <div class="article-info article-info-index">
       
@@ -340,7 +436,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: false,
-		showTags: false
+		showTags: true
 	}
 </script>
 

@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>C/C++代码规范 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。 关于引用的一些规则：  引用被创建的同时必须被初始化（指针则可以在任何时候被初始化） 不能有 NULL 引用，引用必须与合法的存储单元关联（指针则可以是NULL） 一旦引用被初始化，就不能改变引用的关系（指针则可以随时改变所指的对象）">
+  <meta name="description" content="函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。 关于引用的一些规则：">
 <meta name="keywords" content="C&#x2F;C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C&#x2F;C++代码规范">
 <meta property="og:url" content="http://yoursite.com/2018/12/11/C++代码规范总结/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。 关于引用的一些规则：  引用被创建的同时必须被初始化（指针则可以在任何时候被初始化） 不能有 NULL 引用，引用必须与合法的存储单元关联（指针则可以是NULL） 一旦引用被初始化，就不能改变引用的关系（指针则可以随时改变所指的对象）">
+<meta property="og:description" content="函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。 关于引用的一些规则：">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-16T07:16:04.167Z">
+<meta property="og:updated_time" content="2018-12-17T15:39:35.952Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C&#x2F;C++代码规范">
-<meta name="twitter:description" content="函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。 关于引用的一些规则：  引用被创建的同时必须被初始化（指针则可以在任何时候被初始化） 不能有 NULL 引用，引用必须与合法的存储单元关联（指针则可以是NULL） 一旦引用被初始化，就不能改变引用的关系（指针则可以随时改变所指的对象）">
+<meta name="twitter:description" content="函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。 关于引用的一些规则：">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -168,7 +168,9 @@
       
         <ul>
 <li>函数设计中，如果参数是指针，且仅作输入使用，则参数类型应该使用const进行修饰，以防止该指针在函数体内被意外修改。</li>
-<li>关于引用的一些规则：<blockquote>
+<li><p>关于引用的一些规则：</p>
+<a id="more"></a>
+<blockquote>
 <ol>
 <li>引用被创建的同时必须被初始化（指针则可以在任何时候被初始化）</li>
 <li>不能有 NULL 引用，引用必须与合法的存储单元关联（指针则可以是NULL）</li>
@@ -176,9 +178,6 @@
 </ol>
 </blockquote>
 </li>
-</ul>
-<a id="more"></a>
-<ul>
 <li><p>内存分配的三种方式:</p>
 <blockquote>
 <ol>
@@ -224,6 +223,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/12/23/Freertos-任务创建/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Freertos任务创建
+        
+      </div>
+    </a>
   
   
     <a href="/2018/12/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
@@ -307,7 +315,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: false,
-		showTags: false
+		showTags: true
 	}
 </script>
 
